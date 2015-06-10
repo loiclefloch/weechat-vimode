@@ -946,7 +946,8 @@ def cb_key_combo_default(data, signal, signal_data):
             weechat.command("", "/bar hide vi_cmd")
         return weechat.WEECHAT_RC_OK_EAT
     # Enter command mode.
-    elif keys == ":":
+    elif keys == ":" or keys == ";":
+        keys = ":"
         cmd_text += ":"
         weechat.command("", "/bar show vi_cmd")
         weechat.bar_item_update("cmd_text")
