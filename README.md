@@ -1,3 +1,8 @@
+# Add bt me:
+
+- ; as :
+- todo: :b<number>
+
 # Description:
 Add vi/vim-like modes and keybindings to WeeChat.
 
